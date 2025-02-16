@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">ZRPL Test Suite</th></tr>
+<tr><td><a href="#t0">All Tests</a></td><td class="num">7</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">139,916</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">ZRPL Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">All Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">tests.MobileNumberTest</td><td><a href="#m0">verifyLoginWithValidMobileNumberAndInvalidOTP</a></td><td rowspan="1">1739702151011</td><td rowspan="1">10634</td></tr><tr><th colspan="4">All Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">tests.InstituteEmailIdTest</td><td><a href="#m1">verifyLoginWithInvalidEmail</a></td><td rowspan="1">1739702046776</td><td rowspan="1">487</td></tr><tr class="passedeven"><td><a href="#m2">verifyLoginWithValidInstituteEmail</a></td><td rowspan="1">1739702051698</td><td rowspan="1">1099</td></tr><tr class="passedodd"><td rowspan="1">tests.LoginWithGmail</td><td><a href="#m3">verifyGoogleLoginButton</a></td><td rowspan="1">1739702058230</td><td rowspan="1">1997</td></tr><tr class="passedeven"><td rowspan="2">tests.MobileNumberTest</td><td><a href="#m4">verifyLoginWithInvalidMobileNumber</a></td><td rowspan="1">1739702066319</td><td rowspan="1">436</td></tr><tr class="passedeven"><td><a href="#m5">verifyLoginWithValidMobileNumber</a></td><td rowspan="1">1739702071113</td><td rowspan="1">74138</td></tr><tr class="passedodd"><td rowspan="2">tests.PersonalEmailIdTest</td><td><a href="#m6">verifyLoginWithInvalidEmail</a></td><td rowspan="1">1739702167028</td><td rowspan="1">431</td></tr><tr class="passedodd"><td><a href="#m7">verifyLoginWithValidPersonalEmail</a></td><td rowspan="1">1739702171702</td><td rowspan="1">7976</td></tr></tbody>
+</table>
+<h2>All Tests</h2><h3 id="m0">tests.MobileNumberTest#verifyLoginWithValidMobileNumberAndInvalidOTP</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //*[@id=&apos;otpVerify&apos;] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.98, chrome: {chromedriverVersion: 133.0.6943.98 (da53563ceb66..., userDataDir: C:\Users\vanis\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49399}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49399/devtoo..., se:cdpVersion: 133.0.6943.98, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 66d950c98cbb0725559ac8606b6d5bea
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at tests.MobileNumberTest.verifyLoginWithValidMobileNumberAndInvalidOTP(MobileNumberTest.java:103)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">tests.InstituteEmailIdTest#verifyLoginWithInvalidEmail</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">tests.InstituteEmailIdTest#verifyLoginWithValidInstituteEmail</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">tests.LoginWithGmail#verifyGoogleLoginButton</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">tests.MobileNumberTest#verifyLoginWithInvalidMobileNumber</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">tests.MobileNumberTest#verifyLoginWithValidMobileNumber</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">tests.PersonalEmailIdTest#verifyLoginWithInvalidEmail</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">tests.PersonalEmailIdTest#verifyLoginWithValidPersonalEmail</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
